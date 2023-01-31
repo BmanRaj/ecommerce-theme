@@ -24,13 +24,6 @@ const IndexPage = () => {
     navigate('/shop');
   };
 
-  componentDidMount () {
-    const script = document.createElement("script");
-    script.src = "https://us01ccistatic.zoom.us/us01cci/web-sdk/zcc-sdk.js";
-    script.data-apikey = "Q_ty2k4uSJ2UTwLnfGCwqA"
-    script.async = true;
-    document.body.appendChild(script);
-}
   
   return (
     <Layout disablePaddingBottom>
