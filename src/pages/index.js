@@ -10,6 +10,8 @@ import ProductCollectionGrid from '../components/ProductCollectionGrid';
 import ProductCardGrid from '../components/ProductCardGrid';
 import Quote from '../components/Quote';
 import Title from '../components/Title';
+import ScriptTag from 'react-script-tag';
+
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
@@ -24,6 +26,9 @@ const IndexPage = () => {
     navigate('/shop');
   };
 
+  const Demo = props => (
+<ScriptTag type="text/javascript" data-apikey="Q_ty2k4uSJ2UTwLnfGCwqA" src="https://us01ccistatic.zoom.us/us01cci/web-sdk/zcc-sdk.js" />
+)
   
   return (
     <Layout disablePaddingBottom>
