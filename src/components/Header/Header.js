@@ -52,17 +52,7 @@ const Header = (prop) => {
   };
   
   
-  //load ZCC SDK
-  useEffect(() => {
-  const script = document.createElement('script');
-  script.src = "https://us01ccistatic.zoom.us/us01cci/web-sdk/zcc-sdk.js";
-  script.async = true;
-  script.data-apikey="Q_ty2k4uSJ2UTwLnfGCwqA"
-  document.body.appendChild(script);
-return () => {
-    document.body.removeChild(script);
-  }
-}, []);
+
 
   // disable active menu when show menu is hidden
   useEffect(() => {
